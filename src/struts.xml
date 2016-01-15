@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 上传文件的临时路径 -->
+	<constant name="struts.multipart.saveDir" value="c:/temp"></constant>
+	<!-- 上传文件的最大尺寸 -->
+	<constant name="struts.multipart.maxSize" value="104857600" />
+	<!-- 开发者模式，把错误信息打印在浏览器的页面上，而不在后台控制台打印输出。如果不设置的话会报异常，后台会打印错误信息。 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- struts.xml发生变化是自动加载，无需重启 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- struts2默认使用的字符集编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 定义Struts2的路径扩展名是什么，可以随意更改扩展名 -->
+	<constant name="struts.action.extension" value="action"></constant>
+	<!-- 开启动态方法调用，不用在再action中写method方法即可 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+
+	<include file="config/javacsv.xml"></include>
+</struts>
